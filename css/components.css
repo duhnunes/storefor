@@ -1,0 +1,81 @@
+/* ============ GLOBAL ============ */
+.active{
+    display:block;
+}
+
+input:focus{
+    background:rgba(255,255,255,0.7);
+}
+
+.divisor{
+    margin:10px 0;
+}
+
+
+/* ============ BUTTON ============ */
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--color-third);
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    box-shadow:1px 1px 5px var(--color-primary);
+    font-size:1.1rem;
+    text-decoration:none;
+    transition:all .4s;
+    cursor:pointer;
+}
+.btn:hover{
+    box-shadow:none;
+    transform:translate(2%, 2%);
+}
+.btn-primary{
+    color:var(--color-primary);
+    text-shadow: 0 1px 7px var(--color-primary);
+}
+
+/* ============ SEARCHBAR ============ */
+.search{
+    display:flex;
+    align-items:center;
+    position:relative;
+    width:380px;
+    height:50%;
+    border-radius:15px;
+    box-shadow:1px 1px 7px var(--color-shadow);
+}
+.search input{
+    width:90%;
+    height:100%;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    padding:5px 10px;
+    background:var(--color-paper);
+    border:none;
+}
+.magnifying-glass{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#333;
+    width:50px;
+    height:100%;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    cursor:pointer;
+}
+.magnifying-glass i{
+    position:absolute;
+    font-size:1em;
+    color:var(--color-white);
+    text-shadow:0 0 5px #000;
+}
+.magnifying-glass:hover i{
+    animation:shake_hover .4s ease-in-out;
+}
+#search::placeholder{
+    font-weight:bold;
+
+}

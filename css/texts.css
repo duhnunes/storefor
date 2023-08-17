@@ -1,4 +1,16 @@
-/* LOGO SF */
+/* ============ GLOBAL ============ */
+.link{
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:1rem;
+    transition:opacity .5s;
+}
+.link:hover{
+    opacity:0.7;
+    transition:opacity .2s;
+}
+
+/* ============ HEADER-INFO ============ */
 .logo{
     position:relative;
 }
@@ -22,30 +34,28 @@
     transform:translateY(-20%);
     border-radius:5px;
 }
-.top__title{
-    color:var(--color-disable);
-    pointer-events:none;
-}
-.header__link{
-    color:var(--color-primary);
-    text-shadow: 0 1px 7px var(--color-primary);
-    text-decoration:none;
-}
 
-.header__link i{
-    font-size:1.1rem;
+/* LOGIN AREA */
+.login__links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
-.subtitle{
-    color:#fff;
-    font-size:1.1rem;
+.login__links p{
+    display:none;
+    pointer-events:none;
+    letter-spacing:.2em;
+    font-size:1.4rem;
 }
-.link{
+.login__links a{
+    display:block;
+}
+.login__links a, p{
+    color:var(--color-primary);
     text-transform:uppercase;
+    text-decoration:none;
     font-weight:700;
     font-size:1rem;
+    text-shadow:0 0 5px var(-color--shadow);
     transition:opacity .5s;
-}
-.link:hover{
-    opacity:0.7;
-    transition:opacity .2s;
 }

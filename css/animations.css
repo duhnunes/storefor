@@ -1,12 +1,9 @@
 @keyframes shake_hover{
     0%{
-        transform:translateX(80%) rotate(15deg);
-    }
-    50%{
-        transform:translateX(80%) rotate(-15deg);
+        transform:rotate(0deg);
     }
     100%{
-        transform:translateX(80%) rotate(0deg);
+        transform:rotate(360deg);
     }
 }
 
@@ -15,6 +12,6 @@
         transform:rotate(0deg);
     }
     to{
-        transform:rotate(180deg);
+        transform:rotate(360deg);
     }
 }
