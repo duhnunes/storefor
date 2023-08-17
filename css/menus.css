@@ -2,9 +2,11 @@
 .header-info {
     display:flex;
     position:fixed;
+    top:0;
     justify-content:space-between;
     align-items:center;
-    background:var(--color-secondary);
+    background:var(--color-third);
+    box-shadow:0 3px 5px var(--color-shadow);
     width:100%;
     height:70px;
     padding:0 15px;
@@ -21,28 +23,54 @@
     gap:20px;
 }
 
+.logo{
+    position:relative;
+    padding-right:35px;
+}
+.logo i{
+    position:absolute;
+    top:9px;
+    right:10px;
+    font-size:.8rem;
+}
+.logo i::after{
+    content:'';
+    position:absolute;
+    border:2px solid var(--color-primary);
+    width:17px;
+    height:11px;
+    padding:4px;
+    left:-5px;
+    transform:translateY(-20%);
+    border-radius:5px;
+}
+
+.login__links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 /* ============ PRINCIPAL MENU ============ */
 .navbar {
     position:relative;
     background:var(--color-third);
-    box-shadow:0 3px 5px var(--color-primary);
+    box-shadow:0 3px 5px var(--color-shadow);
     width:100%;
     height:55px;
     padding:15px;
 }
-.menu--top{
+.menu__shop{
     display:flex;
     gap:20px;
+    list-style:none;
 }
-.menu__link, .dropdown__link, .link{
+.dropdown__link, .link{
     color:var(--color-primary);
     text-decoration:none;
     font-size:1.2rem;
     font-weight:600;
     transition:border .2s;
-}
-.menu__link:hover{
-    border-bottom:5px solid var(--color-primary);
 }
 
 /* ============ DROPDOWN ============ */
@@ -56,11 +84,16 @@
     list-style:none;
     background:var(--color-third);
     min-width:200px;
-    transform:translateY(12%);
-    box-shadow:0 5px 5px rgba(0, 223, 196,.1);
+    transform:translateY(50px);
+    box-shadow:0 0 5px var(--color-shadow);
     padding:12px 16px;
     border-radius:10px;
+    top:0;
     z-index:1;
+}
+.dropdown__alt{
+    right:0;
+    transform:translateY(70px);
 }
 .dropdown:hover .dropdown__content{
     display:block;
@@ -72,13 +105,9 @@
     display:block;
     padding:5px;
 }
-.dropdown__link:hover, .m-login__dp-header:hover{
+.dropdown__link:hover, .dropdown__header:hover{
     background:rgba(0, 223, 196,.1);
     border-radius:8px;
-}
-.dropdown__alt{
-    right:0;
-    transform:translateY(23%);
 }
 .dropdown__header{
     display:flex;
@@ -118,5 +147,5 @@
     transform:rotate(-20deg);
 }
 .dropdown__header:hover i{
-    animation:gear_rotating 3s infinite linear;
+    animation:gear_rotating 8s infinite linear;
 }

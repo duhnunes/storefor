@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Menu -->
+    <!-- MENU -->
     <header>
+        <!-- HEADER MENU TOP -->
         <section class="header-info">
             <a class="logo link" href="./">
                 <h1>StoreFor</h1>
@@ -30,30 +31,38 @@
                 </div>
             </section>
 
-            <section class="header-info__menu">    
+            <section class="header-info__menu">
+
                 <div class="header__btns">
                     <span class="btn btn-primary">
                         <i class="fa-solid fa-headset"></i>
                     </span>
                     <span class="btn btn-primary">
+                        <i class="fa-solid fa-bell"></i>
+                    </span>
+                    <span class="btn btn-primary">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </span>
                 </div>
+
                 <div class="login__links">
                     <p>DuH</p>
                     <a href="#" class="link">Login</a>
                     <a href="#" class="link">Cadastre-se</a>
                 </div>
+                
                 <section class="dropdown">
                     <span class="btn btn-primary">
-                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-user"></i>
                     </span>
                     <ul class="dropdown__content dropdown__alt active">
-                        <a href="#" class="dropdown__header">
-                            <h2>User</h2>
-                            <span>Meu perfil</span>
-                            <i class="fa-solid fa-gear"></i>
-                        </a>
+                        <li>
+                            <a href="#" class="dropdown__header">
+                                <h2>User</h2>
+                                <span>Meu perfil</span>
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                        </li>
                         <hr class="divisor">
                         <li><a href="#" class="dropdown__link">Compras</a></li>
                         <li><a href="#" class="dropdown__link">Perguntas</a></li>
@@ -65,8 +74,8 @@
             </section>
         </section>
 
-        <!-- Images to promotion Carousell -->
-        <div class="headpromotion">
+        <!-- CAROUSEL WITH IMAGES FROM ANNOUNCIATIONS -->
+        <div class="carousel">
             <img src="./assets/system/head-promotion.jpg" alt="Imagem promocional">
         </div>
 
@@ -74,25 +83,39 @@
             
             <!-- Mobile Menu -->
 
-            <!-- Computer Menu_TOP -->
-            <ul class="menu--top">
-                <div class="dropdown">
-                    <a href="#" class="menu__link">Hardware</a>
-                    <div class="dropdown__content active">
-                        <a href="#" class="dropdown__link">Fonte de Alimentação</a>
-                        <a href="#" class="dropdown__link">Gabinete</a>
-                        <a href="#" class="dropdown__link">Memória RAM</a>
-                        <a href="#" class="dropdown__link">MoBo</a>
-                        <a href="#" class="dropdown__link">Monitor</a>
-                        <a href="#" class="dropdown__link">Placa de Vídeo</a>
-                        <a href="#" class="dropdown__link">Processador</a>
-                        <a href="#" class="dropdown__link">Refrigeração</a>
-                        <a href="#" class="dropdown__link">SSD/HDD</a>
-                    </div>
-                </div>
-                <a href="#" class="menu__link">Monte seu PC</a>
-                <a href="#" class="menu__link">Novidades</a>
-                <a href="#" class="menu__link">Sobre nós</a>
+            <!-- MENU SHOP (Desktop) -->
+            <ul class="menu__shop">
+                <section class="dropdown">
+                    <li><a href="#" class="link">Hardware</a></li>
+                    <ul class="dropdown__content active">
+                        <li><a href="#" class="dropdown__link">Fonte de Alimentação</a></li>
+                        <li><a href="#" class="dropdown__link">Gabinete</a></li>
+                        <li><a href="#" class="dropdown__link">Memória RAM</a></li>
+                        <li><a href="#" class="dropdown__link">MoBo</a></li>
+                        <li><a href="#" class="dropdown__link">Monitor</a></li>
+                        <li><a href="#" class="dropdown__link">Placa de Vídeo</a></li>
+                        <li><a href="#" class="dropdown__link">Processador</a></li>
+                        <li><a href="#" class="dropdown__link">Refrigeração</a></li>
+                        <li><a href="#" class="dropdown__link">SSD/HDD</a></li>
+                    </ul>
+                </section>
+                
+                <li><a href="#" class="link">Ofertas do dia</a></li>
+
+                <section class="dropdown">
+                    <li><a href="#" class="link">Smartphones</a></li>
+                    <ul class="dropdown__content active">
+                        <li><a href="#" class="dropdown__link">Asus</a></li>
+                        <li><a href="#" class="dropdown__link">LG</a></li>
+                        <li><a href="#" class="dropdown__link">Motorola</a></li>
+                        <li><a href="#" class="dropdown__link">Samsung</a></li>
+                        <li><a href="#" class="dropdown__link">Xiaomi</a></li>
+                    </ul>
+                </section>
+                <li><a href="#" class="link">Novidades</a></li>
+                <li><a href="#" class="link">Monteu seu PC</a></li>
+                <li><a href="#" class="link">PC Gamer</a></li>
+                <li><a href="#" class="link">Sobre nós</a></li>
             </ul>
         </nav>
 

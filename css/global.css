@@ -6,13 +6,14 @@
 @import url('./animations.css');
 
 
-/* Variables */
+/* ============ VARIABLES ============ */
 :root {
+    /* ============ COLORS ============ */
     --color-primary:#00dfc4;
     --color-secondary:#1d2b3a;
     --color-third:#123;
     
-    --color-shadow:rgba(0, 223, 196,.8);
+    --color-shadow:rgba(0, 223, 196,.7);
 
     /* grayscale */
     --color-black:#000;
@@ -23,9 +24,11 @@
 
     /* disabled / unfocus */
     --color-disable:#9a9a9a;
+
+    /* ============ SCALES ============ */
 }
 
-/* Global Settings */
+/* ============ GLOBAL SETTINGS ============ */
 *{
     margin:0;
     padding:0;
@@ -36,32 +39,18 @@ body{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size:16px;
 }
-
-/* Site Settings */
 header{
-    background:var(--color-primary);
     position:relative;
     width:100%;
-    height:100vh;
 }
 
-
-.headpromotion{
-    height:100vh;
-    width:100%;
-    padding-top:70px;
-    overflow:hidden;
-}
-.headpromotion img{
-    height:100%;
-    width:100%;
-    object-fit:cover;
-}
-
+/* ============ SITE SETTINGS ============ */
 /* MAIN PAGE */
-/* .wrapper{
-    
-} */
+.wrapper{
+    background:#fff;
+    width:100%;
+    padding:50px;
+}
 /* .main__page{
     display:flex;
     flex-direction:column;

@@ -11,36 +11,11 @@
 }
 
 /* ============ HEADER-INFO ============ */
-.logo{
-    position:relative;
-}
 .logo h1{
     font-size:2rem;
 }
-.logo > i{
-    position:absolute;
-    top:9px;
-    left:105%;
-    font-size:.8rem;
-}
-.logo > i::after{
-    content:'';
-    position:absolute;
-    border:2px solid var(--color-primary);
-    width:17px;
-    height:11px;
-    padding:4px;
-    left:-5px;
-    transform:translateY(-20%);
-    border-radius:5px;
-}
 
 /* LOGIN AREA */
-.login__links{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
 .login__links p{
     display:none;
     pointer-events:none;

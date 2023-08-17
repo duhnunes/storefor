@@ -5,12 +5,12 @@
 
 input:focus{
     background:rgba(255,255,255,0.7);
+    outline:2px solid var(--color-primary);
 }
 
 .divisor{
     margin:10px 0;
 }
-
 
 /* ============ BUTTON ============ */
 .btn{
@@ -21,7 +21,7 @@ input:focus{
     width:40px;
     height:40px;
     border-radius:50%;
-    box-shadow:1px 1px 5px var(--color-primary);
+    box-shadow:1px 1px 5px var(--color-shadow);
     font-size:1.1rem;
     text-decoration:none;
     transition:all .4s;
@@ -33,7 +33,7 @@ input:focus{
 }
 .btn-primary{
     color:var(--color-primary);
-    text-shadow: 0 1px 7px var(--color-primary);
+    text-shadow: 0 1px 7px var(--color-shadow);
 }
 
 /* ============ SEARCHBAR ============ */
@@ -45,6 +45,7 @@ input:focus{
     height:50%;
     border-radius:15px;
     box-shadow:1px 1px 7px var(--color-shadow);
+    margin:0 10px;
 }
 .search input{
     width:90%;
@@ -77,5 +78,19 @@ input:focus{
 }
 #search::placeholder{
     font-weight:bold;
+    
+}
 
+/* ============ CAROUSEL ============ */
+.carousel{
+    height:50vh;
+    width:100%;
+    margin-top:100px;
+    border:1px solid var(--color-paper);
+}
+.carousel img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
 }
