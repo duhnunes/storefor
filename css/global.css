@@ -83,15 +83,15 @@ header{
 .search{
     display:flex;
     align-items:center;
-    width:40%;
-    height:50%;
     position:relative;
+    width:380px;
+    height:50%;
     background:#333;
     border-radius:15px;
     box-shadow:1px 1px 7px var(--color-shadow);
 }
 .search input{
-    width:92%;
+    width:90%;
     height:100%;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
