@@ -7,11 +7,11 @@
     <meta name="description" content="Compre online de onde estiver. Entrega para todo o brasil!">
     <meta name="keywords" content="Loja online, compras, comprar, loja, ecommerce, e-commerce, eletrônicos, brasil">
 
-    <title>StoreFor | Início</title>
+    <title>StoreFor | Produtos</title>
     
     <!-- Assets -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="../../../css/global.css">
+    <link rel="icon" href="../../../img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -55,7 +55,7 @@
                     <span class="btn btn-primary">
                         <i class="fa-solid fa-user"></i>
                     </span>
-                    <ul class="dropdown__content dropdown__alt active">
+                    <ul class="dropdown__content dropdown__user">
                         <li>
                             <a href="#" class="dropdown__header">
                                 <h2>User</h2>
@@ -74,9 +74,9 @@
             </section>
         </section>
 
-        <!-- CAROUSEL WITH IMAGES FROM ANNOUNCIATIONS -->
+        <!-- IMAGE FROM SECTION -->
         <div class="promotion-img">
-            <img src="./assets/system/head-promotion.jpg" alt="Imagem promocional">
+            <img src="../../../assets/system/head-promotion.jpg" alt="Imagem promocional">
         </div>
 
         <nav class="navbar">
@@ -87,7 +87,7 @@
             <ul class="menu__shop">
                 <section class="dropdown">
                     <li><a href="#" class="link">Hardware</a></li>
-                    <ul class="dropdown__content show">
+                    <ul class="dropdown__content">
                         <li><a href="#" class="dropdown__link">Fonte de Alimentação</a></li>
                         <li><a href="#" class="dropdown__link">Gabinete</a></li>
                         <li><a href="#" class="dropdown__link">Memória RAM</a></li>
@@ -102,7 +102,7 @@
 
                 <section class="dropdown">
                     <li><a href="#" class="link">Smartphones</a></li>
-                    <ul class="dropdown__content show">
+                    <ul class="dropdown__content">
                         <li><a href="#" class="dropdown__link">Asus</a></li>
                         <li><a href="#" class="dropdown__link">LG</a></li>
                         <li><a href="#" class="dropdown__link">Motorola</a></li>
@@ -124,21 +124,33 @@
     </header>
 
     <main class="wrapper">
-        <section class="main__page">
-            
-            <section class="content--cards">
-                
-            </section>
 
-            <section class="content--cards">
-                
-            </section>
+        <section class="body-box">
+
+            <div class="body__divisor">
+
+                <div class="body__filter">
+                    <aside class="body__sidebar">
+                        <header class="body__header">
+                            <h3 class="filter">Filtros</h3>
+                            <div class="btn-filter">
+                                <button class="btn btn__filter">Limpar</button>
+                                <button class="btn btn__filter">Aplicar</button>
+                            </div>
+                        </header>
+                        <div class="body__nav-sidebar">Categorias</div>
+                    </aside>
+                </div>
+
+                <div class="body__products-cards">card dos produtos</div>
+
+            </div>
         </section>
     </main>
 
     <!-- JS Assets -->
-    <!-- <script src="./js/menus.js"></script> -->
-    <script src="./js/animations.js"></script>
+    <script src="../../../js/menus.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="./js/card.js"></script>
     <script src="./js/cart.js"></script>
 </body>

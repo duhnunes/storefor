@@ -34,3 +34,9 @@
     text-shadow:0 0 5px var(-color--shadow);
     transition:opacity .5s;
 }
+
+/* ============ BODY ============ */
+.filter{
+    color:#fff;
+    text-transform:uppercase;
+}

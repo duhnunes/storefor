@@ -26,6 +26,7 @@
     --color-disable:#9a9a9a;
 
     /* ============ SCALES ============ */
+    --border-radius:10px;
 }
 
 /* ============ GLOBAL SETTINGS ============ */
@@ -51,25 +52,3 @@ header{
     width:100%;
     padding:50px;
 }
-/* .main__page{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:50px;
-    width:100%;
-    padding:20px 40px;
-    border-radius:15px;
-    background:var(--color-third);
-    box-shadow:0 0 5px var(--color-shadow);
-} */
-/* .content--cards{
-    background:var(--color-paper);
-    width:100%;
-    height:200px;
-} */
-
-/* .card{
-    background:var(--color-third);
-    box-shadow:0 0 5px var(--color-shadow);
-} */

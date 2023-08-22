@@ -1,5 +1,5 @@
 /* ============ GLOBAL ============ */
-.active{
+.show{
     display:block;
 }
 
@@ -81,16 +81,58 @@ input:focus{
     
 }
 
-/* ============ CAROUSEL ============ */
-.carousel{
+/* ============ PROMOTION ============ */
+.promotion-img{
+    width:100%;
     height:50vh;
-    width:100%;
     margin-top:100px;
-    border:1px solid var(--color-paper);
 }
-.carousel img{
-    height:100%;
+.promotion-img img{
     width:100%;
+    height:100%;
     object-fit:cover;
-    object-position:center;
+}
+/* ============ BODY ============ */
+.body-box{
+    border:1px solid red;
+}
+.body__divisor{
+    display:grid;
+    grid-template-columns:250px 1fr;
+}
+.body__filter{
+    background:red;
+    display:flex;
+    flex-direction:column;
+}
+.body__sidebar{
+    display:flex;
+    flex-direction:column;
+}
+.body__header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:15px 0 25px;
+}
+.btn-filter{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    align-items:center;
+    width:100%;
+    padding:0 25px;
+}
+.btn__filter{
+    color:#fff;
+    border-radius:var(--border-radius);
+    width:100%;
+    height:100%;
+    padding:6px;
+}
+.body__nav-sidebar{
+    background:yellow;
+}
+.body__products-cards{
+    background:green;
 }
