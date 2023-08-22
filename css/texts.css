@@ -14,6 +14,13 @@
 .logo h1{
     font-size:2rem;
 }
+.dropdown__link, .link{
+    color:var(--color-primary);
+    text-decoration:none;
+    font-size:1.2rem;
+    font-weight:600;
+    transition:border .2s;
+}
 
 /* LOGIN AREA */
 .login__links p{

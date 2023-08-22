@@ -1,5 +1,5 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('./menus.css');
 @import url('./components.css');
 @import url('./texts.css');
@@ -27,6 +27,9 @@
 
     /* ============ SCALES ============ */
     --border-radius:10px;
+    
+    /* ============ DETAILS ============ */
+    --box-shadow:0 -1px 15px var(--color-shadow);
 }
 
 /* ============ GLOBAL SETTINGS ============ */
@@ -37,7 +40,7 @@
 }
 body{
     background:var(--color-secondary);
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size:16px;
 }
 header{
@@ -48,7 +51,7 @@ header{
 /* ============ SITE SETTINGS ============ */
 /* MAIN PAGE */
 .wrapper{
-    background:#fff;
+    background:var(--color-secondary);
     width:100%;
     padding:50px;
 }
