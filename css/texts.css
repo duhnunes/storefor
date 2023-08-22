@@ -25,7 +25,7 @@
 .login__links a{
     display:block;
 }
-.login__links a, p{
+.login__links p, a{
     color:var(--color-primary);
     text-transform:uppercase;
     text-decoration:none;
@@ -39,4 +39,18 @@
 .filter{
     color:#fff;
     text-transform:uppercase;
+}
+
+/* ============ FOOTER ============ */
+.footer-title{
+    color:var(--color-paper);
+    font-size:.9rem;
+    font-weight:800;
+}
+.footer__social a{
+    font-size:1.5rem;
+}
+.footer__p{
+    color:var(--color-paper);
+    font-size:.85rem;
 }
