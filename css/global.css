@@ -51,7 +51,6 @@ header{
 /* ============ SITE SETTINGS ============ */
 /* MAIN PAGE */
 .wrapper{
-    background:var(--color-secondary);
     width:100%;
     padding:50px;
 }
