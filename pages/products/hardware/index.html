@@ -130,22 +130,220 @@
     <main class="wrapper">
 
         <section class="body-box">
+            
             <div class="body__divisor">
 
                 <div class="body__filter">
                     <aside class="body__sidebar">
-                        <header class="body__header">
+                        <header class="filters-header">
                             <h3 class="filter">Filtros</h3>
                             <div class="btn-filter">
                                 <button class="btn btn__filter">Limpar</button>
                                 <button class="btn btn__filter">Aplicar</button>
                             </div>
                         </header>
-                        <div class="body__nav-sidebar">Categorias</div>
+                        <div class="body__nav-sidebar">
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Preço</summary>
+                                <div class="summary__content">
+                                    <p>Intervalo de Preço</p>
+                                    <label class="filter__options">
+                                        <input type="range" name="filter" id="filter__range">
+                                    </label>
+                                    <div class="filter__price">
+                                        <span class="price__min">Vai</span>
+                                        <span class="price__max">Vem</span>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Marcas</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Asus
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Gigabyte
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Intel
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        AMD
+                                    </label>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Velocidade</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        1333 MHz
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        1600 MHz
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        1866 MHz
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        3200 MHz
+                                    </label>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Capacidade</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        32GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        16GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        8GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        4GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        2GB
+                                    </label>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Compatibilidade</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Desktop
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Notebook
+                                    </label>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Iluminação RGB</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Não
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        Sim
+                                    </label>
+                                </div>
+                            </details>
+
+                            <details class="sidebar__details" open>
+                                <summary class="sidebar-summary">Memória</summary>
+                                <div class="summary__content">
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        1GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        2GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        4GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        6GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        8GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        10GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        12GB
+                                    </label>
+                                    <label class="filter__options">
+                                        <input type="checkbox" name="filter" id="filter__checkbox">
+                                        16GB
+                                    </label>
+                                </div>
+                            </details>
+
+                        </div>
                     </aside>
                 </div>
 
-                <div class="body__products-cards">Card dos produtos</div>
+            </div>
+            <div class="body__products-cards">
+                <!-- ORGANIZATION -->
+                <div class="organization">
+
+                    <div class="order">
+                        <i class="fa-solid fa-sort"></i>
+                        <span>Ordenar:</span>
+                        <select name="order" id="order">
+                            <option value="price">Preço crescente</option>
+                            <option value="-price">Preço decrestente</option>
+                            <option value="-number_rating">Mais avaliados</option>
+                            <option value="-date_product_arrived">Mais recentes</option>
+                            <option value="most_searched" selected>Mais procurados</option>
+                            <option value="offer_price">Promoções</option>
+                        </select>
+                    </div>
+
+                    <div class="order">
+                        <span>Exibir:</span>
+                        <select name="order" id="order">
+                            <option value="20" selected>20 por página</option>
+                            <option value="40">40 por página</option>
+                            <option value="60">60 por página</option>
+                            <option value="80">80 por página</option>
+                            <option value="100">100 por página</option>
+                        </select>
+                    </div>
+
+                    <div class="count-product">
+                    <strong id="count">0</strong>
+                    <span class="count">produtos</span>
+                    </div>
+
+                    <div class="view-list">
+                        <span class="btn-view btn btn-primary">
+                            <i class="fa-solid fa-list"></i>
+                        </span>
+                        <span class="btn-view btn btn-primary">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- CARDS PRODUCTS -->
 
             </div>
         </section>

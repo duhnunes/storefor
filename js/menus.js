@@ -5,3 +5,5 @@ const show = document.querySelector('.dropdown__content');
 dropdown.addEventListener('click', () => {
     show.classList.toggle('show');
 });
+
+// FILTERS PERSISTENCE
