@@ -246,10 +246,12 @@ input[type="checkbock"]{
 .view-list{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:20px;
 }
 .btn-view{
-    border-radius:var(--border-radius);
+    background:none;
+    box-shadow:none;
+    cursor:pointer;
 }
 
 /* ============ FOOTER ============ */
