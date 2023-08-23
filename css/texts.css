@@ -64,3 +64,41 @@
     color:var(--color-paper);
     font-size:.95rem;
 }
+
+/* ============ CARDS ============ */
+.product__name{
+    font-size:0.875rem;
+    line-height:1.125rem;
+    font-weight:600;
+    margin-top:.5rem;
+    color:var(--color-paper);
+}
+.price-original{
+    font-size:.75rem;
+    line-height:1.375rem;
+    font-weight:400;
+    display:flex;
+    align-items:center;
+    height:.75rem;
+    color:var(--color-disable);
+    text-decoration:line-through;
+}
+.price-offer{
+    display:flex;
+    align-items:center;
+    margin:.25rem 0;
+    font-size:1.25rem;
+    line-height:1.875rem;
+    font-weight:700;
+    height:1.25rem;
+    color:var(--color-primary);
+}
+.price-declaration{
+    display:flex;
+    align-items:center;
+    font-size:.75rem;
+    line-height:1rem;
+    font-weight:400;
+    height:.75rem;
+    color:var(--color-disable);
+}
