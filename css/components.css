@@ -411,7 +411,7 @@ footer .divisor{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin:5rem 0;
+    margin:2rem 0 0;
     position:relative;
 }
 .form input{
@@ -422,6 +422,7 @@ footer .divisor{
 }
 .form__new-pw.link{
     width:100%;
+    margin-top:5px;
     font-size:.875rem;
 }
 .btn-login, .btn-create{
