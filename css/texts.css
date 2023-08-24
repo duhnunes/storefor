@@ -102,3 +102,12 @@
     height:.75rem;
     color:var(--color-disable);
 }
+
+
+/* ============ LOGIN ============ */
+.title_login{
+    font-size:1.875rem;
+    font-weight:700;
+    line-height:1.875rem;
+    color:var(--color-primary);
+}
