@@ -26,10 +26,12 @@
     --color-disable:#9a9a9a;
 
     /* ============ SCALES ============ */
-    --border-radius:10px;
+    --border-default:10px;
+    --border-input:15px;
     
     /* ============ DETAILS ============ */
-    --box-shadow:0 0 15px var(--color-shadow);
+    --shadow-default:0 0 15px var(--color-shadow);
+    --shadow-input:1px 1px 7px var(--color-shadow);
 }
 
 /* ============ GLOBAL SETTINGS ============ */

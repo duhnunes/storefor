@@ -3,17 +3,28 @@
     display:block;
 }
 
+input{
+    width:100%;
+    height:100%;
+    border-radius:var(--border-input);
+    box-shadow:var(--shadow-input);
+    background:var(--color-paper);
+    padding:.3125rem .625rem;
+    border:none;
+    font-size:1rem;
+    font-weight:600;
+}
 input:focus{
     background:rgba(255,255,255,0.7);
     outline:2px solid var(--color-primary);
 }
 
 .divisor{
-    margin:10px 0;
-}
-input[type="checkbock"]{
-    border:1px solid red;
-    background:red;
+    background:#333;
+    height:2px;
+    width:100%;
+    border:none;
+    margin:.625rem 0;
 }
 
 /* ============ BUTTON ============ */
@@ -28,11 +39,10 @@ input[type="checkbock"]{
     box-shadow:1px 1px 5px var(--color-shadow);
     font-size:1.1rem;
     text-decoration:none;
-    transition:all .25s;
+    transition:transform .3s ease-in;
     cursor:pointer;
 }
 .btn:hover{
-    box-shadow:none;
     transform:translate(1px, 1%);
 }
 .btn-primary{
@@ -51,42 +61,22 @@ input[type="checkbock"]{
     box-shadow:1px 1px 7px var(--color-shadow);
     margin:0 10px;
 }
-.search input, [type="text"], [type="password"]{
-    width:100%;
-    height:100%;
-    border-top-left-radius:15px;
-    border-bottom-left-radius:15px;
-    padding:5px 10px;
-    background:var(--color-paper);
-    border:none;
-    font-weight:600;
+#search{
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
 }
-.magnifying-glass{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.btn-search{
     background:#333;
     width:50px;
     height:100%;
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
-    cursor:pointer;
-}
-.magnifying-glass i{
-    position:absolute;
-    font-size:1em;
+    border-radius:0 15px 15px 0;
+    box-shadow:none;
     color:var(--color-white);
-    text-shadow:0 0 5px #000;
-    transition:all .2s ease-in-out;
+    overflow:hidden;
 }
-.magnifying-glass:hover i{
-    transform:scale(105%);
-    transition:all .2s ease-in-out;
-}
-#search::placeholder{
-    font-weight:bold;
-    
-}
+
+
+
 
 /* ============ PROMOTION-AREA ============ */
 .promotion-img{
@@ -102,14 +92,14 @@ input[type="checkbock"]{
 /* ============ BODY ============ */
 .body-box{
     position:relative;
-    border-radius:var(--border-radius);
+    border-radius:var(--border-default);
     display:flex;
     gap:15px;
 }
 .body__divisor{
     width:250px;
-    box-shadow:var(--box-shadow);
-    border-radius:var(--border-radius);
+    box-shadow:var(--shadow-default);
+    border-radius:var(--border-default);
 }
 
 /* FILTERS */
@@ -131,8 +121,8 @@ input[type="checkbock"]{
     top:70px;
     background:var(--color-secondary);
     border-bottom:2px solid var(--color-shadow);
-    border-top-left-radius:var(--border-radius);
-    border-top-right-radius:var(--border-radius);
+    border-top-left-radius:var(--border-default);
+    border-top-right-radius:var(--border-default);
     z-index:2;
 }
 .btn-filter{
@@ -145,7 +135,7 @@ input[type="checkbock"]{
 }
 .btn__filter{
     color:#fff;
-    border-radius:var(--border-radius);
+    border-radius:var(--border-default);
     width:100%;
     height:100%;
     padding:6px;
@@ -189,7 +179,7 @@ input[type="checkbock"]{
     background:transparent;
     border:.0625rem solid var(--color-primary);
     width:100%;
-    border-radius:var(--border-radius);
+    border-radius:var(--border-default);
     cursor:pointer;
 }
 #filter__checkbox{
@@ -266,11 +256,11 @@ input[type="checkbock"]{
 }
 .card {
     background:var(--color-third);
-    box-shadow:var(--box-shadow);
+    box-shadow:var(--shadow-default);
     margin:10px;
     width:18.125rem;
     height:31.25rem;
-    border-radius:var(--border-radius);
+    border-radius:var(--border-default);
     display:flex;
     flex-direction:column;
     position:relative;
@@ -324,7 +314,7 @@ input[type="checkbock"]{
     justify-content:center;
     width:100%;
     height:100%;
-    border-radius:var(--border-radius);
+    border-radius:var(--border-default);
     background:var(--color-primary);
     color:var(--color-third);
     box-shadow:none;
@@ -340,7 +330,7 @@ input[type="checkbock"]{
     display:flex;
     flex-direction:column;
     background:var(--color-third);
-    box-shadow:var(--box-shadow);
+    box-shadow:var(--shadow-default);
 
 }
 .footer-menu-area{
@@ -391,13 +381,6 @@ input[type="checkbock"]{
     font-size:1.2rem;
     font-weight:500;
 }
-footer .divisor{
-    background:#333;
-    height:2px;
-    width:100%;
-    border:none;
-    margin:0;
-}
 
 /* ============ LOGIN PAGE ============ */
 .login__area{
@@ -418,7 +401,6 @@ footer .divisor{
     padding:1rem 10px;
     font-size:1.3rem;
     margin:10px 0;
-    border-radius:var(--border-radius);
     transition:all .25s;
 }
 .form__new-pw.link{
@@ -434,8 +416,8 @@ footer .divisor{
     font-size:1.2rem;
     font-weight:600;
     background:var(--color-primary);
-    border-radius:var(--border-radius);
-    box-shadow:var(--box-shadow);
+    border-radius:var(--border-default);
+    box-shadow:var(--shadow-default);
     height:auto;
 }
 .btn-create{
