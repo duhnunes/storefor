@@ -45,31 +45,54 @@
                     </span>
                 </div>
 
-                <div class="login__links">
-                    <p>DuH</p>
+                <div class="header__links">
                     <a href="../../../user/login/index.html" class="link">Login</a>
                     <a href="#" class="link">Cadastre-se</a>
                 </div>
                 
-                <section class="dropdown">
-                    <span class="btn btn-primary">
-                        <i class="fa-solid fa-user"></i>
-                    </span>
-                    <ul class="dropdown__content dropdown__user">
-                        <li>
-                            <a href="#" class="dropdown__header">
-                                <h2>User</h2>
-                                <span>Meu perfil</span>
-                                <i class="fa-solid fa-gear"></i>
+                <span class="btn user-pic" onclick="userMenu()">
+                    <img src="../../../../img/user-img.png" alt="Imagem do usuário">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                </span>
+                <section class="dropdown-wrap">
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">
+                            <a href="#">
+                                <figure class="user-info">
+                                    <img src="../../../../img/user-img.png" alt="Imagem do usuário">
+                                    <figcaption class="user-name">
+                                        <h3>John Doe</h3>
+                                        <p>Edit Profile</p>
+                                    </figcaption>
+                                </figure>
+                                <span class="gear">
+                                    <i class="fa-solid fa-gear"></i>
+                                </span>
                             </a>
-                        </li>
+                        </div>
                         <hr class="divisor">
-                        <li><a href="#" class="dropdown__link">Compras</a></li>
-                        <li><a href="#" class="dropdown__link">Perguntas</a></li>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Compras</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Perguntas</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Configurações</p>
+                            <span>></span>
+                        </a>
                         <hr class="divisor">
-                        <li><a href="#" class="dropdown__link">Configurações</a></li>
-                        <li><a href="#" class="dropdown__link">Sair</a></li>
-                    </ul>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Sair</p>
+                            <span>></span>
+                        </a>
+                    </div>
                 </section>
             </section>
         </section>
@@ -88,34 +111,87 @@
                 <li><a href="#" class="link">Ofertas do dia</a></li>
                 <li><a href="#" class="link">Novidades</a></li>
 
-                <section class="dropdown">
-                    <li><a href="#" class="link">Hardware</a></li>
-                    <ul class="dropdown__content">
-                        <li class="dropdown__items">
-                            <a href="#" class="dropdown__link">Fonte de Alimentação</a>
-                        </li>
-                        <li><a href="#" class="dropdown__link">Gabinete</a></li>
-                        <li><a href="#" class="dropdown__link">Memória RAM</a></li>
-                        <li><a href="#" class="dropdown__link">MoBo</a></li>
-                        <li><a href="#" class="dropdown__link">Monitor</a></li>
-                        <li><a href="#" class="dropdown__link">Placa de Vídeo</a></li>
-                        <li><a href="#" class="dropdown__link">Processador</a></li>
-                        <li><a href="#" class="dropdown__link">Refrigeração</a></li>
-                        <li><a href="#" class="dropdown__link">SSD/HDD</a></li>
-                    </ul>
+                <section class="dropdown-wrap-nav">
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Fonte de Alimentação</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Gabinete</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Memória Ram</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>MoBo</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Monitor</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Placa de Vídeo</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Processador</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Refrigeração</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>SSD/HDD</p>
+                            <span>></span>
+                        </a>
+                    </div>
                 </section>
 
                 <li><a href="#" class="link">Notebooks</a></li>
 
-                <section class="dropdown">
-                    <li><a href="#" class="link">Smartphones</a></li>
-                    <ul class="dropdown__content">
-                        <li><a href="#" class="dropdown__link">Asus</a></li>
-                        <li><a href="#" class="dropdown__link">LG</a></li>
-                        <li><a href="#" class="dropdown__link">Motorola</a></li>
-                        <li><a href="#" class="dropdown__link">Samsung</a></li>
-                        <li><a href="#" class="dropdown__link">Xiaomi</a></li>
-                    </ul>
+                <span class="nav-link" onclick="userMenu()">Smartphones</span>
+                <section class="dropdown-wrap-nav">
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Asus</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>LG</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Motorola</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Samsung</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="dropdown__link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Xiaomi</p>
+                            <span>></span>
+                        </a>
+                    </div>
                 </section>
 
                 <li><a href="#" class="link">Monte seu PC</a></li>

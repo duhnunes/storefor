@@ -1,6 +1,6 @@
 /* ============ GLOBAL ============ */
 .show{
-    display:block;
+    max-height:600px;
 }
 
 input{

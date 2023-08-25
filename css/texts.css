@@ -1,13 +1,17 @@
 /* ============ GLOBAL ============ */
-.link{
+.link, .nav-link{
     text-transform:uppercase;
     font-weight:600;
     font-size:1.2rem;
+    color:var(--color-primary);
+    text-decoration:none;
     transition:opacity .5s;
+    cursor:pointer;
 }
-.link:hover{
+.link:hover,
+.nav-link:hover{
     opacity:0.7;
-    transition:opacity .2s;
+    transition:opacity .3s;
 }
 
 /* ============ HEADER-INFO ============ */
@@ -23,24 +27,8 @@
 }
 
 /* LOGIN AREA */
-.login__links p{
-    display:none;
-    pointer-events:none;
-    letter-spacing:.2em;
-    font-size:1.4rem;
-}
-.login__links a{
-    display:block;
-}
-.login__links p, a{
-    color:var(--color-primary);
-    text-transform:uppercase;
-    text-decoration:none;
-    font-weight:700;
-    font-size:1rem;
-    text-shadow:0 0 5px var(-color--shadow);
-    transition:opacity .5s;
-}
+
+
 
 /* ============ BODY ============ */
 .filter{
