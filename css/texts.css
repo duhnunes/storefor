@@ -1,5 +1,5 @@
 /* ============ GLOBAL ============ */
-.link, .nav-link{
+.link, .menu__item{
     text-transform:uppercase;
     font-weight:600;
     font-size:1.2rem;
@@ -9,9 +9,12 @@
     cursor:pointer;
 }
 .link:hover,
-.nav-link:hover{
+.menu__item:hover{
     opacity:0.7;
     transition:opacity .3s;
+}
+.menu__item{
+    line-height:1.125rem;
 }
 
 /* ============ HEADER-INFO ============ */
