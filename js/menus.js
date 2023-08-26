@@ -1,14 +1,13 @@
 // DROPDOWN PERSISTENCE
 const menu = document.querySelector('.menu__shop');
+const menuLinks = document.querySelectorAll('.menu__item');
+
+
+
 
 function userMenu(){
     const user = document.querySelector(".user-pic");
     const navlink = document.querySelector('.nav-link');
-
-    let navLink = [1,2,3,4,5];
-    for(let pos in navLink){
-        console.log(navLink[pos]);
-    }
 
     if(user.onclick){
         document.querySelector(".dropdown-wrap").classList.toggle('show');

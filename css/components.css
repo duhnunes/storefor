@@ -324,6 +324,18 @@ input:focus{
 .btn__buy i{
     margin-right:.5rem;
 }
+.card-login{
+    width:80%;
+    height:70%;
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+}
+.card-login img{
+    width:40%;
+    height:100%;
+    object-fit:cover;
+}
 
 
 /* ============ FOOTER ============ */
@@ -382,6 +394,11 @@ input:focus{
     font-size:1.2rem;
     font-weight:500;
 }
+.footer-login{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
 
 /* ============ LOGIN PAGE ============ */
 .login__area{
@@ -390,6 +407,14 @@ input:focus{
 }
 .login{
     width:28.125rem;
+}
+.login-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:30px;
 }
 .form{
     display:flex;
@@ -416,6 +441,7 @@ input:focus{
     text-transform:uppercase;
     font-size:1.2rem;
     font-weight:600;
+    color:var(--color-dgray);
     background:var(--color-primary);
     border-radius:var(--border-default);
     box-shadow:var(--shadow-default);

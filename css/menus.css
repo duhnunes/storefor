@@ -12,6 +12,23 @@
     padding:0 15px;
     z-index:2;
 }
+.-header_login{
+    position:absolute;
+    top:5%;
+}
+.header-login{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+}
+.header-login__btn{
+    /* position:absolute; */
+    left:auto;
+    right:0;
+    top:0;
+}
+
 .header__menu{
     display:flex;
     align-items:center;
