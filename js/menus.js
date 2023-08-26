@@ -1,16 +1,23 @@
 // DROPDOWN PERSISTENCE
-const menu = document.querySelector('.menu__shop');
-const menuLinks = document.querySelectorAll('.menu__item');
+function hardware(){
+    const hardware = document.querySelector('#hardware');
 
-
-
-
+    if(hardware.onclick){
+        document.querySelector(".dropdown-wrap-hw").classList.toggle('show');
+    }
+}
 function userMenu(){
     const user = document.querySelector(".user-pic");
-    const navlink = document.querySelector('.nav-link');
 
     if(user.onclick){
         document.querySelector(".dropdown-wrap").classList.toggle('show');
+    }
+}
+function smartphone(){
+    const smartphone = document.querySelector('#smartphone');
+
+    if(smartphone.onclick){
+        document.querySelector('.dropdown-wrap-sp').classList.toggle('show');
     }
 }
 window.onclick = function(e){
@@ -22,8 +29,8 @@ window.onclick = function(e){
             if(openDropdown.classList.contains('show')){
                 openDropdown.classList.remove('show');
             }
+
         }
     }
 }
-
 // FILTERS PERSISTENCE

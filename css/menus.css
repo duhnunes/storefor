@@ -75,7 +75,7 @@
 }
 
 /* ============ DROPDOWN ============ */
-.dropdown-wrap, .dropdown-wrap-nav{
+.dropdown-wrap, .dropdown-wrap-hw, .dropdown-wrap-sp{
     position:absolute;
     top:100%;
     right:10px;
@@ -84,10 +84,15 @@
     overflow:hidden;
     color:var(--color-paper);
     transition:max-height .7s;
+    z-index:1;
 }
-.dropdown-wrap-nav{
+.dropdown-wrap-hw{
     right:0;
-    left:25%;
+    left:30%;
+}
+.dropdown-wrap-sp{
+    right:0;
+    left:55%;
 }
 .dropdown-menu{
     background:var(--color-third);

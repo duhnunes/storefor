@@ -25,6 +25,9 @@ input:focus{
     border:none;
     margin:.625rem 0;
 }
+.shadow{
+    box-shadow:var(--shadow-default);
+}
 
 /* ============ BUTTON ============ */
 .btn{
