@@ -31,18 +31,21 @@ input:focus{
 
 .notification span{
     position:absolute;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    top:0;
-    right:0;
-    left:auto;
+    display:inline-block;
+    padding:.25em .4em;
+    font-size:75%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.35rem;
+    color:#fff;
     background:#F00;
-    border-radius:50%;
-    height:15px;
-    width:15px;
-    font-size:0.8125rem;
-    transform:translate(5px, -5px)
+    transform:scale(0.7);
+    transform-origin:top right;
+    right:-0.25rem;
+    margin-top:-1.5rem;
 }
 
 /* ============ BUTTON ============ */

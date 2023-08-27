@@ -197,10 +197,14 @@
 
 
 /* ============ NOTIFICATION ============ */
+.-not-padding{
+    padding:20px 0;
+}
 .not-header{
     display:flex;
     align-items:center;
     justify-content:center;
+    position:relative;
 }
 .not-info{
     display:flex;
@@ -216,4 +220,9 @@
 a.-not{
     text-decoration:none;
     color:var(--color-paper);
+}
+.all-read{
+    position:absolute;
+    right:20px;
+    left:auto;
 }
