@@ -20,6 +20,14 @@ function smartphone(){
         document.querySelector('.dropdown-wrap-sp').classList.toggle('show');
     }
 }
+function notification(){
+    const notification = document.querySelector('.notification');
+
+    if(notification.onclick){
+        document.querySelector('.dropdown-wrap-not').classList.toggle('show');
+    }
+}
+
 window.onclick = function(e){
     if(!e.target.matches('.user-pic') && !e.target.matches('.user-pic img')){
         var dropdowns = document.getElementsByClassName("dropdown-wrap");

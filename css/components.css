@@ -29,8 +29,25 @@ input:focus{
     box-shadow:var(--shadow-default);
 }
 
+.notification span{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top:0;
+    right:0;
+    left:auto;
+    background:#F00;
+    border-radius:50%;
+    height:15px;
+    width:15px;
+    font-size:0.8125rem;
+    transform:translate(5px, -5px)
+}
+
 /* ============ BUTTON ============ */
 .btn{
+    position:relative;
     display:flex;
     align-items:center;
     justify-content:center;
