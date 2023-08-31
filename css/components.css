@@ -476,3 +476,11 @@ input:focus{
     color:var(--color-primary);
     background:var(--color-third);
 }
+.pw-eye{
+    position:absolute;
+    right:5%;
+    bottom:60%;
+    transform:translateY(-30%);
+    font-size:1.3rem;
+    cursor:pointer;
+}
