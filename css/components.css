@@ -3,7 +3,7 @@
     max-height:600px;
 }
 
-input{
+input[type="text"], [type="password"]{
     width:100%;
     height:100%;
     background:var(--color-paper);
@@ -12,10 +12,38 @@ input{
     border:none;
     font-size:1rem;
     font-weight:600;
+    transition:all .25s;
 }
 input:focus{
     background:rgba(255,255,255,0.7);
     outline:2px solid var(--color-primary);
+}
+input[type="checkbox"]{
+    appearance:none;
+    margin-right:.5rem;
+    background:transparent;
+    border-radius:var(--border-input);
+    border:0.0625rem solid var(--color-primary);
+    min-width:1rem;
+    height:1rem;
+    position:relative;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked{
+    background:var(--color-shadow);
+    position:relative;
+}
+input[type="checkbox"]:checked::after{
+    content:"\2713";
+    position:absolute;
+    color:#fff;
+    top:-3px;
+    right:2px;
+    font-size:.8rem;
+    font-weight:700;
+}
+input[type="checkbox"]:focus{
+    outline:none;
 }
 
 .divisor{
@@ -213,21 +241,7 @@ input:focus{
     border-radius:var(--border-default);
     cursor:pointer;
 }
-#filter__checkbox{
-    appearance:none;
-    background:transparent;
-    border:0.0625rem solid var(--color-primary);
-    width:1rem;
-    height:1rem;
-    position:relative;
-    cursor:pointer;
-}
-#filter__checkbox:checked{
-    background:var(--color-shadow);
-}
-#filter__checkbox:focus{
-    outline:none;
-}
+
 
 /* CARDS */
 .body__products-cards{
@@ -455,12 +469,10 @@ input:focus{
     position:relative;
     width:100%;
 }
-.form input{
-    padding:1rem 10px;
-    margin:10px 0;
-    height:auto;
-    transition:all .25s;
+.form input:not([type="checkbox"]){
+    padding:1rem .625rem;
 }
+
 .form__new-pw.link{
     width:100%;
     margin-top:5px;
@@ -491,7 +503,7 @@ input:focus{
     border:none;
     color:var(--color-dgray);
     right:0;
-    top:.8rem;
+    top:.4rem;
     transform:translate(-0.625rem, 0.625rem);
     background:transparent;
     cursor:pointer;
@@ -523,7 +535,7 @@ input:focus{
     display:flex;
     position:relative;
     gap:25px;
-    margin-bottom:.5rem;
+    margin:.625rem 0;
     border-radius:var(--border-default);
     color:var(--color-paper);
     width:100%;
@@ -536,13 +548,4 @@ input:focus{
 .info{
     color:var(--color-disable);
     margin-right:auto;
-}
-.checkboxs{
-    width:100%;
-    margin-top:.5rem;
-    color:var(--color-paper);
-}
-input[type="checkbox"]{
-    width:auto;
-    margin-right:.5rem;
 }
