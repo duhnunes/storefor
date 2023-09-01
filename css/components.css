@@ -28,17 +28,19 @@ input[type="checkbox"]{
     height:1rem;
     position:relative;
     cursor:pointer;
+    transition:all .25s;
 }
 input[type="checkbox"]:checked{
     background:var(--color-shadow);
     position:relative;
+    transition:all .25s;
 }
 input[type="checkbox"]:checked::after{
     content:"\2713";
     position:absolute;
     color:#fff;
-    top:-3px;
-    right:2px;
+    top:-.15625rem;
+    right:.125rem;
     font-size:.8rem;
     font-weight:700;
 }
