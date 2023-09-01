@@ -24,8 +24,8 @@ input[type="checkbox"]{
     background:transparent;
     border-radius:var(--border-input);
     border:0.0625rem solid var(--color-primary);
-    min-width:1rem;
-    height:1rem;
+    min-width:1.2rem;
+    height:1.2rem;
     position:relative;
     cursor:pointer;
     transition:all .25s;
@@ -39,8 +39,8 @@ input[type="checkbox"]:checked::after{
     content:"\2713";
     position:absolute;
     color:#fff;
-    top:-.15625rem;
-    right:.125rem;
+    top:-.05875rem;
+    left:.2rem;
     font-size:.8rem;
     font-weight:700;
 }
@@ -536,12 +536,12 @@ input[type="checkbox"]:focus{
 .input-area{
     display:flex;
     position:relative;
+    align-items:flex-start;
     gap:25px;
     margin:.625rem 0;
     border-radius:var(--border-default);
     color:var(--color-paper);
     width:100%;
-    align-items:center;
 }
 .input-group{
     width:100%;
@@ -550,4 +550,20 @@ input[type="checkbox"]:focus{
 .info{
     color:var(--color-disable);
     margin-right:auto;
+}
+
+.ballon-area{
+    margin:.3125rem 0;
+    font-size:1rem;
+}
+.-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    gap:.3125rem;
+}
+.ballon {
+    padding:.625rem;
+    border-radius:var(--border-default);
+    align-self:center;
 }

@@ -12,9 +12,13 @@ eye.addEventListener('click', () => {
     }
 })
 
-// VALIDATION EMAIL AND PASSWORD
+// VALIDATIONS EMAIL AND PASSWORD
+const createBallons = () => {
+    
+}
+
+
 const email = document.getElementById('email');
-const password = document.getElementById('pw');
 
 const enter = document.querySelector('.btn-login');
 enter.addEventListener('click', () => {
@@ -29,3 +33,4 @@ enter.addEventListener('click', () => {
     }
 })
 
+// PASSWORD NEEDS
