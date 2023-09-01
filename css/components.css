@@ -487,10 +487,13 @@ input:focus{
 }
 .pw-eye{
     position:absolute;
-    right:5%;
-    bottom:60%;
-    transform:translateY(-30%);
-    font-size:1.3rem;
+    font-size:1.2rem;
+    border:none;
+    color:var(--color-dgray);
+    right:0;
+    top:.8rem;
+    transform:translate(-0.625rem, 0.625rem);
+    background:transparent;
     cursor:pointer;
 }
 
@@ -516,14 +519,19 @@ input:focus{
 .-m0{
     margin-top:0;
 }
-.name{
+.input-area{
     display:flex;
+    position:relative;
     gap:25px;
     margin-bottom:.5rem;
     border-radius:var(--border-default);
     color:var(--color-paper);
     width:100%;
     align-items:center;
+}
+.input-group{
+    width:100%;
+    position:relative;
 }
 .info{
     color:var(--color-disable);
