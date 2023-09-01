@@ -5,8 +5,10 @@ const eye = document.querySelector(".pw-eye");
 eye.addEventListener('click', () => {
     if(pw.type == "text"){
         pw.type="password";
+        pw.focus();
     }else {
         pw.type="text";
+        pw.focus();
     }
 })
 

@@ -48,6 +48,14 @@ input:focus{
     margin-top:-1.5rem;
 }
 
+.danger{
+    color:#F00;
+    font-size:1.2rem;
+    font-weight:700;
+    text-align:center;
+    padding:0 0 .5rem;
+}
+
 /* ============ BUTTON ============ */
 .btn{
     position:relative;
@@ -445,11 +453,12 @@ input:focus{
     align-items:center;
     margin:2rem 0 0;
     position:relative;
+    width:100%;
 }
 .form input{
     padding:1rem 10px;
-    font-size:1.3rem;
     margin:10px 0;
+    height:auto;
     transition:all .25s;
 }
 .form__new-pw.link{
@@ -483,4 +492,49 @@ input:focus{
     transform:translateY(-30%);
     font-size:1.3rem;
     cursor:pointer;
+}
+
+
+/* ============ REGISTER PAGE ============ */
+.card-info{
+    margin-top:50px;
+    width:100%;
+    height:auto;
+    color:#fff;
+    padding:.7rem;
+    text-align:center;
+}
+.-register{
+    justify-content:center;
+}
+.card-register{
+    display:flex;
+    justify-content:center;
+    width:80%;
+    height:auto;
+}
+.-m0{
+    margin-top:0;
+}
+.name{
+    display:flex;
+    gap:25px;
+    margin-bottom:.5rem;
+    border-radius:var(--border-default);
+    color:var(--color-paper);
+    width:100%;
+    align-items:center;
+}
+.info{
+    color:var(--color-disable);
+    margin-right:auto;
+}
+.checkboxs{
+    width:100%;
+    margin-top:.5rem;
+    color:var(--color-paper);
+}
+input[type="checkbox"]{
+    width:auto;
+    margin-right:.5rem;
 }
