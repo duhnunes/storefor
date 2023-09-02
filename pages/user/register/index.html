@@ -54,62 +54,65 @@
                     <form class="form -m0">
                         <div class="input-area">
                             <div class="input-group">
-                                <input class="shadow" type="text" name="name" id="fname" placeholder="Nome Completo*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        Nome necessário
-                                    </span>
-                                </div>
+                                <input class="shadow" type="text" name="name" id="fname" required>
+                                <span class="placeholder">
+                                    Nome Completo
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                             </div>
                             <div class="input-group">
-                                <input class="shadow" type="text" name="cpf" id="cpf" placeholder="CPF*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        CPF necessário
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="input-area">
-                            <div class="input-group">
-                                <input class="shadow" type="text" name="birthday" id="birthday" placeholder="Data de Nascimento*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        Data de Nascimento necessária
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <input class="shadow" type="text" name="phone" id="phone" placeholder="Telefone Celular*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        Telefone necessário
-                                    </span>
-                                </div>
+                                <input class="shadow" type="text" name="cpf" id="cpf" maxlength="14" inputmode="numeric" required>
+                                <span class="placeholder">
+                                    CFP
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                             </div>
                         </div>
 
                         <div class="input-area">
                             <div class="input-group">
-                                <input class="shadow" type="text" name="email" id="email" placeholder="Email*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        Email necessário
-                                    </span>
-                                </div>
+                                <input class="shadow" type="text" name="birthday" id="birthday" inputmode="numeric" required>
+                                <span class="placeholder">
+                                    Data de Nascimento
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                            <div class="input-group">
+                                <input class="shadow" type="text" name="phone" id="phone" inputmode="numeric" required>
+                                <span class="placeholder">
+                                    Telefone Celular
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                             </div>
                         </div>
 
                         <div class="input-area">
                             <div class="input-group">
-                                <input class="shadow" type="password" name="pw" id="pw" placeholder="Crie sua Senha*" required>
-                                <div class="ballon-area -grid">
+                                <input class="shadow" type="text" name="email" id="email" inputmode="email" required>
+                                <span class="placeholder">
+                                    Email
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="input-area">
+                            <div class="input-group">
+                                <input class="shadow" type="password" name="pw" id="pw" required>
+                                <span class="placeholder">
+                                    Crie sua Senha
+                                </span>
+                                <!-- <div class="ballon-area -grid">
                                     <span class="ballon">
                                         <i class="fa-solid fa-check"></i>
                                         No mínimo 8 dígitos
@@ -126,24 +129,23 @@
                                         <i class="fa-solid fa-check"></i>
                                         1 Número
                                     </span>
-                                </div>
+                                </div> -->
+                                <span class="error -pw-error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <button type="button" class="pw-eye">
-                                    <i class="fa-solid fa-eye" id="change"></i>
+                                    <i class="fa-solid fa-eye"></i>
                                 </button>
                             </div>
                             <div class="input-group">
-                                <input class="shadow" type="password" name="cpw" id="conf-password" placeholder="Confirme sua Senha*" required>
-                                <div class="ballon-area">
-                                    <span class="ballon">
-                                        <i class="fa-solid fa-check"></i>
-                                        Senhas diferentes
-                                    </span>
-                                </div>
+                                <input class="shadow" type="password" name="cpw" id="conf-password" required>
+                                <span class="placeholder">
+                                    Confirme sua Senha
+                                </span>
+                                <span class="error">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                             </div>
-                        </div>
-    
-                        <div class="input-area">
-                            <p class="info">(*) Campos obrigatórios</p>
                         </div>
 
                         <div class="input-area">
@@ -151,8 +153,8 @@
                             <label for="newsletter">Quero receber ofertas e novidades por e-mail, SMS e WhatsApp!</label>
                         </div>
                         <div class="input-area">
-                            <input type="checkbox" name="terms" id="terms" checked>
-                            <label for="terms">Li e estou de acordo com as <a href="#" class="link">políticas da empresa e políticas de privacidade.</a> *</label>
+                            <input type="checkbox" name="terms" id="terms" checked required>
+                            <label for="terms">Li e estou de acordo com as <a href="#" class="link">políticas da empresa e políticas de privacidade.</a></label>
                         </div>
                         
                         <span class="btn btn-login">Continuar</span>

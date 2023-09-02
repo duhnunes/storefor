@@ -79,11 +79,14 @@ input[type="checkbox"]:focus{
 }
 
 .danger{
-    color:#F00;
+    color:var(--color-danger);
     font-size:1.2rem;
     font-weight:700;
     text-align:center;
     padding:0 0 .5rem;
+}
+.-sucess{
+    background:var(--color-sucess);
 }
 
 /* ============ BUTTON ============ */
@@ -109,6 +112,25 @@ input[type="checkbox"]:focus{
 .btn-primary{
     background:var(--color-primary);
     color:var(--color-dgray);
+}
+.btn-login, .btn-create{
+    width:100%;
+    padding:.875rem;
+    margin-top:2rem;
+    text-transform:uppercase;
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--color-dgray);
+    background:var(--color-primary);
+    border-radius:var(--border-default);
+    box-shadow:var(--shadow-default);
+    height:auto;
+}
+.btn-create{
+    margin:10px;
+    border:2px solid var(--color-primary);
+    color:var(--color-primary);
+    background:var(--color-third);
 }
 
 /* ============ SEARCHBAR ============ */
@@ -480,26 +502,8 @@ input[type="checkbox"]:focus{
     margin-top:5px;
     font-size:.875rem;
 }
-.btn-login, .btn-create{
-    width:100%;
-    padding:.875rem;
-    margin-top:2rem;
-    text-transform:uppercase;
-    font-size:1.2rem;
-    font-weight:600;
-    color:var(--color-dgray);
-    background:var(--color-primary);
-    border-radius:var(--border-default);
-    box-shadow:var(--shadow-default);
-    height:auto;
-}
-.btn-create{
-    margin:10px;
-    border:2px solid var(--color-primary);
-    color:var(--color-primary);
-    background:var(--color-third);
-}
-.pw-eye{
+
+.pw-eye, .error{
     position:absolute;
     font-size:1.2rem;
     border:none;
@@ -510,7 +514,11 @@ input[type="checkbox"]:focus{
     background:transparent;
     cursor:pointer;
 }
-
+.error{
+    color:#F00;
+    cursor:text;
+    transform:translate(-35px, 9px);
+}
 
 /* ============ REGISTER PAGE ============ */
 .card-info{
@@ -556,6 +564,7 @@ input[type="checkbox"]:focus{
     margin:.3125rem 0;
     font-size:1rem;
 }
+
 .-grid{
     display:grid;
     grid-template-columns:repeat(2, 1fr);

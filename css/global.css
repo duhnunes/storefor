@@ -12,8 +12,11 @@
     --color-primary:#00dfc4;
     --color-secondary:#1d2b3a;
     --color-third:#123;
+    --color-sucess:#008000;
+    --color-danger:#F00;
     
     --color-shadow:rgba(0, 223, 196,.7);
+    
 
     /* grayscale */
     --color-black:#000;
