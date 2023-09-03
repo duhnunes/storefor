@@ -2,7 +2,7 @@
 .link, .menu__item{
     text-transform:uppercase;
     font-weight:600;
-    font-size:1.1rem;
+    font-size:1rem;
     color:var(--color-primary);
     text-decoration:none;
     transition:opacity .5s;

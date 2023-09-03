@@ -522,8 +522,8 @@ input[type="checkbox"]:focus{
 
 /* ============ REGISTER PAGE ============ */
 .card-info{
-    margin-top:50px;
-    width:100%;
+    margin:3.125rem 0;
+    width:48.75rem;
     height:auto;
     color:#fff;
     padding:.7rem;
@@ -535,7 +535,9 @@ input[type="checkbox"]:focus{
 .card-register{
     display:flex;
     justify-content:center;
-    width:80%;
+    align-items:center;
+    width:48.75rem;
+    margin:0;
     height:auto;
 }
 .-m0{
