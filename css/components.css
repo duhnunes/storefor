@@ -559,20 +559,14 @@ input[type="checkbox"]:focus{
     color:var(--color-disable);
     margin-right:auto;
 }
-
 .ballon-area{
-    margin:.3125rem 0;
-    font-size:1rem;
-}
-
-.-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:repeat(2, 1fr);
-    gap:.3125rem;
+    position:relative;
+    display:block;
+    height:15px;
 }
 .ballon {
-    padding:.625rem;
-    border-radius:var(--border-default);
-    align-self:center;
+    position:absolute;
+    top:5px;
+    left:10px;
+    color:#dc3545;
 }

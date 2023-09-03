@@ -229,7 +229,7 @@ a.-not{
 
 .placeholder{
     position:absolute;
-    top:50%;
+    top:1.5625rem;
     left:15px;
     transform:translateY(-50%);
     color:var(--color-disable);
