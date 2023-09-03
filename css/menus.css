@@ -238,6 +238,7 @@ a.-not{
     border-top-left-radius:var(--border-default);
     border-top-right-radius:var(--border-default);
     pointer-events:none;
+    z-index:1;
     transition:all 0.3s;
 }
 input:focus ~ .placeholder,
@@ -249,4 +250,5 @@ input:valid ~ .placeholder{
     font-weight:500;
     padding:3px 6px;
     box-shadow:var(--shadow-default);
+    z-index:0;
 }
