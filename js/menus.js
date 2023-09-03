@@ -41,4 +41,3 @@ window.onclick = function(e){
         }
     }
 }
-// FILTERS PERSISTENCE

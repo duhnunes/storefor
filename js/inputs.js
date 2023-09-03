@@ -2,13 +2,13 @@
 const email = document.querySelector('#email');     // login
 const pw = document.querySelector('#pw');           // login
 
-const name = document.querySelector('#fname');
+const name = document.querySelector('#username');
 const cpf = document.querySelector('#cpf');
 const birthday = document.querySelector('#birthday');
 const phone = document.querySelector('#phone');
 const remail = document.querySelector('#remail');
 const rpw = document.querySelector('.rpw');
-const cpw = document.querySelector('#cpw');
+const cpw = document.querySelector('#confirm-password');
 const terms = document.querySelector('#terms');
 
 
