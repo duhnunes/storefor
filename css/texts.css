@@ -38,9 +38,12 @@
     color:#fff;
     text-transform:uppercase;
 }
-
-/* ============ FILTERS ============ */
-
+.title{
+    color:var(--color-paper);
+    font-size:1.625rem;
+    font-weight:600;
+    text-transform:uppercase;
+}
 
 /* ============ FOOTER ============ */
 .footer-title{

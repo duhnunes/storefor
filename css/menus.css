@@ -226,29 +226,3 @@ a.-not{
     right:20px;
     left:auto;
 }
-
-.placeholder{
-    position:absolute;
-    top:1.5625rem;
-    left:15px;
-    transform:translateY(-50%);
-    color:var(--color-disable);
-    font-size:18px;
-    font-weight:500;
-    border-top-left-radius:var(--border-default);
-    border-top-right-radius:var(--border-default);
-    pointer-events:none;
-    z-index:1;
-    transition:all 0.3s;
-}
-input:focus ~ .placeholder,
-input:valid ~ .placeholder{
-    background:var(--color-primary);
-    color:var(--color-dgray);
-    top:-10px;
-    font-size:.875rem;
-    font-weight:500;
-    padding:3px 6px;
-    box-shadow:var(--shadow-default);
-    z-index:0;
-}

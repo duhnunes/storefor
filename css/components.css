@@ -17,7 +17,7 @@ input[type="text"], [type="password"]{
     transition:all .25s;
 }
 input:focus{
-    background:rgba(255,255,255,0.7);
+    background:#a9a9a9;
     outline:2px solid var(--color-primary);
 }
 input[type="checkbox"]{
@@ -543,9 +543,6 @@ input[type="checkbox"]:focus{
     margin:0;
     height:auto;
 }
-.-m0{
-    margin-top:0;
-}
 .input-area{
     display:flex;
     position:relative;
@@ -560,6 +557,41 @@ input[type="checkbox"]:focus{
     width:100%;
     position:relative;
 }
+.input-group input::placeholder{
+    color:transparent;
+}
+.input-group label{
+    pointer-events:none;
+    position:absolute;
+    top:1.5625rem;
+    left:15px;
+    transform:translateY(-50%);
+    padding:5px;
+    font-size:18px;
+    font-weight:500;
+    color:var(--color-disable);
+    border-top-left-radius:var(--border-default);
+    border-top-right-radius:var(--border-default);
+    transition:all .2s linear;
+    z-index:1;
+}
+.input-group input:required:invalid+label{
+    color:blue;
+}
+.input-group input:required:invalid + label:before{
+    content:'*';
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown)+label{
+    font-size:.875rem;
+    font-weight:500;
+    padding:3px 6px;
+    top:-9px;
+    color:var(--color-dgray);
+    background-color:var(--color-primary);
+    z-index:0;
+}
+
 .info{
     color:var(--color-disable);
     margin-right:auto;
