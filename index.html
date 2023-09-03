@@ -135,9 +135,29 @@
         </section>
 
         <!-- CAROUSEL WITH IMAGES FROM ANNOUNCIATIONS -->
-        <div class="promotion-img">
-            <img src="./assets/system/head-promotion.jpg" alt="Imagem promocional">
-        </div>
+        <section class="slide-box">
+
+            <div class="gallery">
+                <img class="slide-img current-item" src="./assets/system/head-promotion.jpg" alt="Promo 1">
+                <img class="slide-img" src="./assets/system/head-promotion.jpg" alt="Promo 2">
+                <img class="slide-img" src="./assets/system/head-promotion.jpg" alt="Promo 3">
+                <img class="slide-img" src="./assets/system/head-promotion.jpg" alt="Promo 4">
+                <img class="slide-img" src="./assets/system/head-promotion.jpg" alt="Promo 5">
+            </div>
+
+            <!-- btns -->
+            <span class="btn prev control"><</span>
+            <span class="btn next control">></span>
+
+            <div class="slide-page">
+                <input type="radio" name="slide-btn" id="raio1">
+                <input type="radio" name="slide-btn" id="raio2">
+                <input type="radio" name="slide-btn" id="raio3">
+                <input type="radio" name="slide-btn" id="raio4">
+                <input type="radio" name="slide-btn" id="raio5">
+            </div>
+
+        </section>
 
         <nav class="navbar">
             
@@ -438,8 +458,6 @@
 
     <!-- JS Assets -->
     <script src="./js/menus.js"></script>
-    <!-- <script src="./js/animations.js"></script>
-    <script src="./js/card.js"></script>
-    <script src="./js/cart.js"></script> -->
+    <script src="./js/carousel.js"></script>
 </body>
 </html>

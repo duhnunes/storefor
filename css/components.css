@@ -20,7 +20,7 @@ input:focus{
     background:#a9a9a9;
     outline:2px solid var(--color-primary);
 }
-input[type="checkbox"]{
+input[type="checkbox"], [type="radio"]{
     appearance:none;
     margin-right:.5rem;
     background:transparent;
@@ -32,10 +32,17 @@ input[type="checkbox"]{
     cursor:pointer;
     transition:all .25s;
 }
-input[type="checkbox"]:checked{
+input[type="radio"]{
+    border:0.0625rem solid var(--color-secondary);
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
     background:var(--color-shadow);
     position:relative;
     transition:all .25s;
+}
+input[type="radio"]:checked{
+    padding:0 .875rem;
 }
 input[type="checkbox"]:checked::after{
     content:"\2713";
@@ -46,7 +53,8 @@ input[type="checkbox"]:checked::after{
     font-size:.8rem;
     font-weight:700;
 }
-input[type="checkbox"]:focus{
+input[type="checkbox"]:focus,
+input[type="radio"]:focus{
     outline:none;
 }
 
@@ -164,16 +172,52 @@ input[type="checkbox"]:focus{
 
 
 /* ============ PROMOTION-AREA ============ */
-.promotion-img{
+.slide-box{
+    margin-top:70px;
+    overflow-x:hidden;
+}
+.gallery{
+    display:flex;
+    flex-flow:row nowrap;
+}
+.slide-img{
     width:100%;
     height:50vh;
-    margin-top:100px;
+    flex-shrink:0;
 }
-.promotion-img img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.prev, .next{
+    position:absolute;
+    top:35%;
+    left:30px;
+    width:40px;
+    border-radius:5px;
+    box-shadow:none;
+    background:linear-gradient(to left, transparent 0%, var(--color-third));
+    user-select:none;
+    z-index:1;
 }
+.next{
+    left:auto;
+    right:30px;
+    background:linear-gradient(to right, transparent 0%, var(--color-third));
+}
+.prev:hover{
+    transform:translate(-3px, 0);
+}
+.next:hover{
+    transform:translate(3px, 0);
+}
+
+.slide-page{
+    position:absolute;
+    bottom:50px;
+    left:45%;
+    display:flex;
+    flex-flow:row nowrap;
+    gap:5px;
+}
+
+
 /* ============ BODY ============ */
 .body-box{
     position:relative;
@@ -330,6 +374,7 @@ input[type="checkbox"]:focus{
     box-shadow:var(--shadow-default);
     margin:10px;
     width:18.125rem;
+    min-width:18.425rem;
     height:31.25rem;
     border-radius:var(--border-default);
     display:flex;
