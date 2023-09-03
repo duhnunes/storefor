@@ -27,9 +27,6 @@ function notification(){
         document.querySelector('.dropdown-wrap-not').classList.toggle('show');
     }
 }
-document.getElementsByClassName('.dropdown-wrap').addEventListener('click', function (event){
-    EventTarget.sttopPropagation();
-})
 
 window.onclick = function(e){
     if(!e.target.matches('.user-pic') && !e.target.matches('.user-pic img')){
