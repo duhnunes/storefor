@@ -88,14 +88,14 @@
 }
 .dropdown-wrap-hw{
     right:0;
-    left:30%;
+    left:270px;
 }
 .dropdown-wrap-sp{
-    right:0;
-    left:55%;
+    right:auto;
+    left:480px;
 }
 .dropdown-wrap-not{
-    right:26%;
+    right:270px;
 }
 .dropdown-menu{
     background:var(--color-third);
