@@ -1,7 +1,4 @@
 /* ============ GLOBAL ============ */
-.show{
-    max-height:600px;
-}
 
 input[type="text"], [type="password"]{
     width:100%;
@@ -81,7 +78,7 @@ input[type="radio"]:focus{
     vertical-align:baseline;
     border-radius:.35rem;
     color:#fff;
-    background:#F00;
+    background:var(--color-danger);
     transform:scale(0.7);
     transform-origin:top right;
     right:-0.25rem;

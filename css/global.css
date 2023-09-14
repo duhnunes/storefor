@@ -1,8 +1,8 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('./menus.css');
-@import url('./components.css');
 @import url('./texts.css');
+@import url('./components.css');
+@import url('./menus.css');
 @import url('./animations.css');
 
 
@@ -66,4 +66,11 @@ header{
     justify-content:center;
     align-items:center;
     flex-direction:column;
+}
+.active{
+    transform:translateX(0);
+    transition:1s ease;
+}
+.show{
+    max-height:1000px;
 }
