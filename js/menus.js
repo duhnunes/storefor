@@ -1,43 +1,25 @@
 // DROPDOWN PERSISTENCE
-function hardware(){
-    const hardware = document.querySelector('#hardware');
+const avatar = document.querySelector('#user');
 
-    if(hardware.onclick){
-        document.querySelector(".dropdown-wrap-hw").classList.toggle('show');
+avatar.addEventListener('click', () => {
+    const dropdownWrap = document.querySelector('#dp');
+
+    if(dropdownWrap.classList.contains('show')){
+        dropdownWrap.classList.remove('show');
+    }else{
+        dropdownWrap.classList.add('show');
+    }
+})
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-wrap");
+    for (let i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
     }
 }
-function userMenu(){
-    const user = document.querySelector(".user-pic");
-
-    if(user.onclick){
-        document.querySelector(".dropdown-wrap").classList.toggle('show');
-    }
-}
-function smartphone(){
-    const smartphone = document.querySelector('#smartphone');
-
-    if(smartphone.onclick){
-        document.querySelector('.dropdown-wrap-sp').classList.toggle('show');
-    }
-}
-function notification(){
-    const notification = document.querySelector('.notification');
-
-    if(notification.onclick){
-        document.querySelector('.dropdown-wrap-not').classList.toggle('show');
-    }
-}
-
-window.onclick = function(e){
-    if(!e.target.matches('.user-pic') && !e.target.matches('.user-pic img')){
-        var dropdowns = document.getElementsByClassName("dropdown-wrap");
-        var i;
-        for (i = 0; i < dropdowns.length; i++){
-            var openDropdown = dropdowns[i];
-            if(openDropdown.classList.contains('show')){
-                openDropdown.classList.remove('show');
-            }
-
-        }
-    }
 }

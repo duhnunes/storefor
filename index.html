@@ -26,7 +26,7 @@
             </a>
 
             <section class="search">
-                <input type="text" id="search" placeholder="Busque aqui...">
+                <input type="search" id="search" placeholder="Busque aqui...">
                 <div class="btn btn-search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -39,11 +39,11 @@
                         <i class="fa-solid fa-headset"></i>
                     </span>
 
-                    <span class="btn notification" onclick="notification()">
+                    <span class="btn notification" >
                         <i class="fa-solid fa-bell"></i>
                         <span>2</span>
                     </span>
-                    <section class="dropdown-wrap-not">
+                    <section class="dropdown-wrap dp-not show">
                         <div class="dropdown-menu -not-padding">
                             <div class="not-header">
                                 <h3>Notificações</h3>
@@ -89,11 +89,10 @@
                     <a href="./pages/user/register/" class="link">Cadastre-se</a>
                 </div>
                 
-                <span class="btn user-pic" onclick="userMenu()">
+                <span class="btn user-pic dropbtn" id="user">
                     <img src="./img/user-img.png" alt="Imagem do usuário">
-                    <!-- <i class="fa-solid fa-user"></i> -->
                 </span>
-                <section class="dropdown-wrap">
+                <section class="dropdown-wrap" id="dp">
                     <div class="dropdown-menu">
                         <div class="dropdown-header">
                             <a href="#">
@@ -176,8 +175,8 @@
                     <a href="#" class="link">Novidades</a>
                 </li>
                 
-                <li class="menu__item" id="hardware" onclick="hardware()">Hardware</li>
-                <section class="dropdown-wrap-hw">
+                <li class="menu__item" >Hardware</li>
+                <section class="dropdown-wrap dp-hw show">
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown__link">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -231,8 +230,8 @@
                     <a href="#" class="link">Notebooks</a>
                 </li>
 
-                <li class="menu__item" id="smartphone" onclick="smartphone()">Smartphones</li>
-                <section class="dropdown-wrap-sp">
+                <li class="menu__item" >Smartphones</li>
+                <section class="dropdown-wrap dp-sp show">
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown__link">
                             <i class="fa-solid fa-cart-shopping"></i>

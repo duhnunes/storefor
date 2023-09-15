@@ -72,10 +72,11 @@
 .user-pic img{
     width:20px;
     filter:invert(61%) sepia(85%) saturate(796%) hue-rotate(122deg) brightness(95%) contrast(104%);
+    pointer-events:none;
 }
 
 /* ============ DROPDOWN ============ */
-.dropdown-wrap, .dropdown-wrap-hw, .dropdown-wrap-sp, .dropdown-wrap-not{
+.dropdown-wrap, .dp-hw, .dp-sp, .dp-not{
     position:absolute;
     top:100%;
     right:10px;
@@ -86,15 +87,15 @@
     transition:max-height .7s;
     z-index:1;
 }
-.dropdown-wrap-hw{
+.dp-hw{
     right:0;
     left:270px;
 }
-.dropdown-wrap-sp{
+.dp-sp{
     right:auto;
     left:480px;
 }
-.dropdown-wrap-not{
+.dp-not{
     right:270px;
 }
 .dropdown-menu{
