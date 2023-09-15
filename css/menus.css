@@ -188,6 +188,9 @@
     align-items:center;
     height:2.5rem;
 }
+.ms-profile{
+    margin-top:70px;
+}
 .menu__item{
     display:flex;
     margin:0 10px;

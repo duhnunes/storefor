@@ -646,5 +646,36 @@ input[type="radio"]:focus{
     position:absolute;
     top:5px;
     left:10px;
-    color:#dc3545;
+    color:var(--color-danger);
+}
+
+/* ============ PROFILE PAGE ============ */
+.login-body{
+    display:flex;
+    flex-direction:column;
+}
+.card-username{
+    background:var(--color-third);
+    border-radius:var(--border-default);
+    box-shadow:var(--shadow-input);
+    padding:.875rem;
+    margin: .875rem 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.user-card{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+.user-welcome{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    font-size:1.2rem;
+    color:var(--color-white);
+}
+.userEmail{
+    font-size:.875rem;
 }
