@@ -1,0 +1,18 @@
+{
+  "name": "storefor",
+  "version": "1.0.0",
+  "description": "Esse é um projeto grande e pessoal, para fins de estudo e prática.",
+  "main": "users.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "echo \"Aprovado carai\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
