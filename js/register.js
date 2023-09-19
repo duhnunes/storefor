@@ -19,7 +19,7 @@ createForm.addEventListener('submit', async (e) => {
     };
 
     const response = await fetch('../../../js/users.js', {
-        methor:'POST',
+        method:'POST',
         headers:{
             'Content-Type': 'application/json',
         },
