@@ -18,7 +18,7 @@ createForm.addEventListener('submit', async (e) => {
         password
     };
 
-    const response = await fetch('./js/users.js', {
+    const response = await fetch('../../../js/users.js', {
         method:'POST',
         headers:{
             'Content-Type': 'application/json',
