@@ -17,7 +17,7 @@ const writeFile = (content) => {
 
 // READ
 router.get('/', (req, res) => {
-    const content = readfile();
+    const content = readFile();
     res.send(content);
 })
 
@@ -69,6 +69,6 @@ router.delete('/:id', (req, res) => {
 
 server.use(router);
 
-server.listen(3000, () => {
+server.listen(4000, () => {
     console.log('rodando servidor');
 })
